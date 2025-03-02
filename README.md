@@ -29,7 +29,7 @@ On your computer
     - Wi-Fi credentials, e.g. MY_SSID, MY_PASSWORD
     - Computer name _raspberrypi_
     - User _pi_
-    - Password
+    - Password, e.g. PI_PASSWORD
     - Enable SSH
     - ...
 - Wait for the SD card to be written
