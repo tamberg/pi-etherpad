@@ -14,7 +14,7 @@ On your computer.
 
 > Note: Your computer has to be in the same Wi-Fi network.
 
-> Caution: This is just a proof of concept — it is not secure.
+> Caution: There is no security — assume that anyone can see what you type.
 
 # Make your own
 ## Get the hardware
