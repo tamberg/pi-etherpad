@@ -131,7 +131,8 @@ On the Pi.
     ```
 - Test the database
     ```bash
-    $ mysql -uDB_USER -pDB_PASSWORD
+    $ mysql -uDB_USER -pDB_PASSWORD -D etherpad_db
+    quit
     ```
 - Create a file _settings.json_
     ```bash
