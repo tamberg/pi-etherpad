@@ -117,7 +117,7 @@ On the Pi.
     ```bash
     $ pnpm run prod
     ```
-- Stop Etherpad wit _CTRL-C_
+    Stop with _CTRL-C_
 
 ## Set up a database
 Set up a database for Etherpad to store text content.
