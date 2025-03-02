@@ -119,7 +119,9 @@ On the Pi.
     ```
 - Stop Etherpad wit _CTRL-C_
 
-## Set up a database for Etherpad
+## Set up a database
+Set up a database for Etherpad to store text content.
+
 On the Pi.
 
 - Create a database
@@ -156,7 +158,9 @@ On the Pi.
     $ bin/run.sh
     ```
 
-## Set up a service to run Etherpad
+## Set up a service
+Set up a service to run Etherpad when the Pi starts up.
+
 On the Pi.
 
 - Create a file _etherpad.service_
