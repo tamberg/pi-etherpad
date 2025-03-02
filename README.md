@@ -2,18 +2,39 @@
 
 Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
+## Use Etherpad
+
+On your computer
+
+- Visit http://raspberrypi.local:9001
+
+> Note: your computer has to be in the same Wi-Fi network (or LAN)
+
+# Maker your own
+## Get the hardware
+- [Raspberry Pi 3 B+](https://www.pi-shop.ch/raspberry-pi-3-model-b) (CHF 34)
+- [Kingston SD card 16 GB](https://www.pi-shop.ch/kingston-microsdhc-karte-industrial-uhs-i-16-gb) (CHF 23)
+- [Micro USB power adapter](https://www.pi-shop.ch/raspberry-pi-12-5w-micro-usb-power-supply-2255) (CHF 12)
+
 ## Set up the SD Card
 
 On your computer
 
-- Install Pi Imager
-- Insert SD Card
-- Select Pi 3 (or Pi 4)
-- Select Other > Pi OS 64-bit Lite
-- User: pi, Password: PI_PASSWORD
-- Wi-Fi: MY_SSID, MY_PASSWORD
-- SSH enable
-- Wait for the SD card to be ready
+- Install _Pi Imager_ from https://www.raspberrypi.com/software/
+- Insert the SD card
+- Select device _Pi 3_
+- Select _Pi OS (other)_ > _Pi OS Lite (64-bit)_
+- Select SD card storage (compare size)
+- Next > Edit
+    - Wi-Fi credentials, e.g. MY_SSID, MY_PASSWORD
+    - Computer name _raspberrypi_
+    - User _pi_
+    - Password
+    - Enable SSH
+    - ...
+- Wait for the SD card to be written
+- Insert the SD card into the Pi
+- Try to [log into the Pi](#log-into-the-pi)
 
 On the Pi
 
@@ -163,26 +184,15 @@ Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](http
 	$ sudo systemctl enable etherpad.service
 	$ sudo systemctl start etherpad.service
 
+- [Use Etherpad](#use-etherpad)
+
 - Stop and remove the service (optional)
 
 	$ sudo systemctl stop etherpad.service
 	$ sudo rm /etc/systemd/system/multi-user.target.wants/etherpad.service
 	$ sudo rm /etc/systemd/system/etherpad.service
 
-## Use Etherpad
-
-On your computer
-
-- Visit http://raspberrypi.local:9001
-
-> Note: your computer has to be in the same Wi-Fi network (or LAN)
-
 ## Errors
-
-- On [ERROR] ueberDB - Fatal MySQL error: Error: connect ECONNREFUSED ::1:3306
-
-	Check the database name in settings.json
-
-- On [ERROR] ueberDB - MySQL error: Error: Access denied for user
-
-	Check the user and password in settings.json
+- On `zsh: command not found: $` try to remove the leading `$` character when copying the above commands.
+- On `[ERROR] ueberDB - MySQL error: Error: Access denied for user` check the user and password in settings.json.
+- On `[ERROR] ueberDB - Fatal MySQL error: Error: connect ECONNREFUSED` check the database name and port in settings.json.
