@@ -83,15 +83,15 @@ On the Pi
     v18.19.0
     (or higher)
     ```
-- Install git
+- Install _git_
     ```bash
     $ sudo apt-get install git
     ```
-- Install npm
+- Install _npm_
     ```bash
     $ sudo apt-get install npm
     ```
-- Install pnpm
+- Install _pnpm_
     ```bash
     $ sudo npm install -g pnpm
     ```
@@ -106,58 +106,57 @@ On the Pi
 Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 - Download the source from GitHub
-
-	$ cd ~
-	$ git clone -b master https://github.com/ether/etherpad-lite.git
-
+    ```bash
+    $ cd ~
+    $ git clone -b master https://github.com/ether/etherpad-lite.git
+    ```
 - Build Etherpad with pnpm
-
-	$ cd etherpad-lite
-	$ pnpm i
-	$ pnpm run build:etherpad
-
+    ```bash
+    $ cd etherpad-lite
+    $ pnpm i
+    $ pnpm run build:etherpad
+    ```
 - Run Etherpad with pnpm
-
-	$ pnpm run prod
-
+    ```bash
+    $ pnpm run prod
+    ```
 - Stop Etherpad
-
-	CTRL-C
-
-	(works for most programs)
+    ```bash
+    CTRL-C
+    ```
+    (works for most programs)
 
 ## Set up a database for Etherpad Lite
 
 - Create a database
-
-	$ sudo mysql
-	create database etherpad_db;
-	grant all on etherpad.* to 'DB_USER'@'localhost' identified by 'DB_PASSWORD';
-
+    ```bash
+    $ sudo mysql
+    create database etherpad_db;
+    grant all on etherpad.* to 'DB_USER'@'localhost' identified by 'DB_PASSWORD';
+    ```
 - Test the database
-
-	$ mysql -u DB_USER -pDB_PASSWORD
-
-	> Note: not putting a space after -p is important
-
+    ```bash
+    $ mysql -uDB_USER -pDB_PASSWORD
+    ```
 - Connect Etherpad to the database
-
-	$ nano settings.json
-	{
-	  "dbType" : "mysql",
-	  "dbSettings" : {
-	    "user":     "DB_USER",
-	    "host":     "127.0.0.1",
-	    "port":     3306,
-	    "password": "DB_PASSWORD",
-	    "database": "etherpad_db",
-	    "charset":  "utf8mb4"
-	  },
-	}
-
+    ```bash
+    $ nano settings.json
+    {
+      "dbType" : "mysql",
+      "dbSettings" : {
+        "user":     "DB_USER",
+        "host":     "127.0.0.1",
+        "port":     3306,
+        "password": "DB_PASSWORD",
+        "database": "etherpad_db",
+        "charset":  "utf8mb4"
+      },
+    }
+    ```
 - Run Etherpad once, via bin/run.sh
-
-	$ bin/run.sh
+    ```bash
+    $ bin/run.sh
+    ```
 
 ## Set up a service to run Etherpad
 
