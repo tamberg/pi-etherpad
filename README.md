@@ -3,11 +3,11 @@ Host Etherpad (Lite), a collaborative text editor, on a Pi 3 B+.
 
 > Note: We assume your computer runs MacOS.
 
-## Run Etherpad Lite
+## Run Etherpad
 - Plug the power cable into the Pi and a socket
 - Wait for the Pi to start up (can take a few minutes)
 
-## Use Etherpad Lite
+## Use Etherpad
 On your computer.
 
 - Visit http://raspberrypi.local:9001
@@ -99,7 +99,7 @@ On the Pi.
     $ sudo apt-get install mariadb-server
     ```
 
-## Install Etherpad Lite
+## Install Etherpad
 On the Pi.
 
 - Download the source from GitHub
@@ -107,19 +107,19 @@ On the Pi.
     $ cd ~
     $ git clone -b master https://github.com/ether/etherpad-lite.git
     ```
-- Build Etherpad Lite with _pnpm_
+- Build Etherpad with _pnpm_
     ```bash
     $ cd etherpad-lite
     $ pnpm i
     $ pnpm run build:etherpad
     ```
-- Run Etherpad Lite with _pnpm_
+- Run Etherpad with _pnpm_
     ```bash
     $ pnpm run prod
     ```
-- Stop Etherpad Lite wit _CTRL-C_
+- Stop Etherpad wit _CTRL-C_
 
-## Set up a database for Etherpad Lite
+## Set up a database for Etherpad
 On the Pi.
 
 - Create a database
@@ -152,12 +152,12 @@ On the Pi.
     ```
     Save with _CTRL-X-Y ENTER_
 
-- Run Etherpad Lite once, via bin/run.sh
+- Run Etherpad once, via bin/run.sh
     ```bash
     $ bin/run.sh
     ```
 
-## Set up a service to run Etherpad Lite
+## Set up a service to run Etherpad
 On the Pi.
 
 - Create a file _etherpad.service_
@@ -167,7 +167,7 @@ On the Pi.
     Paste this
     ```bash
     [Unit]
-    Description=Etherpad Lite
+    Description=Etherpad
     After=syslog.target network.target
 
     [Service]
@@ -189,7 +189,7 @@ On the Pi.
     $ sudo systemctl enable etherpad.service
     $ sudo systemctl start etherpad.service
     ```
-- [Use Etherpad Lite](#use-etherpad-lite)
+- [Use Etherpad](#use-etherpad)
 - Stop and remove the service (optional)
     ```bash
     $ sudo systemctl stop etherpad.service
