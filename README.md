@@ -204,6 +204,9 @@ On the Pi.
 - On `[ERROR] ueberDB - MySQL error: Error: Access denied for user` check the user and password in settings.json.
 - On `[ERROR] ueberDB - Fatal MySQL error: Error: connect ECONNREFUSED` check the database name and port in settings.json.
 
+## Limitations
+This is just a basic proof of concept setup without any security built in.
+
 ## License
 This content adapted by [@tamberg](https://twitter.com/tamberg) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
