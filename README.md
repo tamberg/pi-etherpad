@@ -101,9 +101,9 @@ On the Pi
     ```
 
 ## Install Etherpad Lite
-On the Pi
-
 Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
+
+On the Pi
 
 - Download the source from GitHub
     ```bash
@@ -161,37 +161,36 @@ Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](http
 ## Set up a service to run Etherpad
 
 - Create a file etherpad.service
+    ```bash
+    $ sudo nano /etc/systemd/system/etherpad.service
+    [Unit]
+    Description=Etherpad
+    After=syslog.target network.target
 
-	$ sudo nano /etc/systemd/system/etherpad.service
+    [Service]
+    Type=simple
+    User=pi
+    Group=pi
+    WorkingDirectory=/home/pi/etherpad-lite
+    ExecStart=/usr/local/bin/pnpm run prod
+    Restart=always
 
-	[Unit]
-	Description=Etherpad
-	After=syslog.target network.target
-
-	[Service]
-	Type=simple
-	User=pi
-	Group=pi
-	WorkingDirectory=/home/pi/etherpad-lite
-	ExecStart=/usr/local/bin/pnpm run prod
-	Restart=always
-
-	[Install]
-	WantedBy=multi-user.target
-
+    [Install]
+    WantedBy=multi-user.target
+    ```
 - Reload, enable and start the service
-
-	$ sudo systemctl daemon-reload
-	$ sudo systemctl enable etherpad.service
-	$ sudo systemctl start etherpad.service
-
+    ```bash
+    $ sudo systemctl daemon-reload
+    $ sudo systemctl enable etherpad.service
+    $ sudo systemctl start etherpad.service
+    ```
 - [Use Etherpad](#use-etherpad)
-
 - Stop and remove the service (optional)
-
-	$ sudo systemctl stop etherpad.service
-	$ sudo rm /etc/systemd/system/multi-user.target.wants/etherpad.service
-	$ sudo rm /etc/systemd/system/etherpad.service
+    ```bash
+    $ sudo systemctl stop etherpad.service
+    $ sudo rm /etc/systemd/system/multi-user.target.wants/etherpad.service
+    $ sudo rm /etc/systemd/system/etherpad.service
+    ```
 
 ## Errors
 - On `zsh: command not found: $` try to remove the leading `$` character when copying the above commands.
