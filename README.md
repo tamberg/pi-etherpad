@@ -205,7 +205,7 @@ On the Pi.
 - On `[ERROR] ueberDB - Fatal MySQL error: Error: connect ECONNREFUSED` check the database name and port in settings.json.
 
 ## Caution
-This is just a basic proof of concept, without any security built in.
+This is just a basic proof of concept — without any security built in — use at your own risk.
 
 ## License
 This content adapted by [@tamberg](https://twitter.com/tamberg) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
