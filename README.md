@@ -14,6 +14,8 @@ On your computer.
 
 > Note: Your computer has to be in the same Wi-Fi network.
 
+> Caution: This is just a proof of concept — it is not secure.
+
 # Make your own
 ## Get the hardware
 - [Raspberry Pi 3 B+](https://www.pi-shop.ch/raspberry-pi-3-model-b) (CHF 34)
@@ -203,9 +205,6 @@ On the Pi.
 - On `zsh: command not found: $` try to remove the leading `$` character when copying the above commands.
 - On `[ERROR] ueberDB - MySQL error: Error: Access denied for user` check the user and password in settings.json.
 - On `[ERROR] ueberDB - Fatal MySQL error: Error: connect ECONNREFUSED` check the database name and port in settings.json.
-
-## Caution
-This is just a basic proof of concept — without any security built in — use at your own risk.
 
 ## License
 This content adapted by [@tamberg](https://twitter.com/tamberg) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
