@@ -35,7 +35,7 @@ On your computer
     - Password, e.g. PI_PASSWORD
     - Enable SSH
     - ...
-- Wait for the SD card to be written
+- Wait for the SD card to be ready
 - Insert the SD card into the Pi
 - Try to [log into the Pi](#log-into-the-pi)
 
