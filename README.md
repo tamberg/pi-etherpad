@@ -1,5 +1,5 @@
 # Pi Etherpad
-Host Etherpad Lite, a collaborative text editor, on a Pi 3.
+Host Etherpad (Lite), a collaborative text editor, on a Pi 3 B+.
 
 > Note: We assume your computer runs MacOS.
 
