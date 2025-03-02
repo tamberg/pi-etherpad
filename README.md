@@ -45,14 +45,15 @@ On the Pi
 - Insert the SD card into the Pi
 
 ## Log into the Pi
-On your computer
+On your computer, optional.
 
-- Open the Terminal app
-- Type the following command
+> Note: Your computer has to be in the same Wi-Fi network.
+
+- Open the _Terminal_ app
+- Connect to the Pi with _ssh_
     ```bash
-	$ ssh pi@raspberrypi.local
+    $ ssh pi@raspberrypi.local
     ```
-    (You're now on the Pi, via SSH)
 
 ## Set up the Pi
 On the Pi
