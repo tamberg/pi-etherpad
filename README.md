@@ -1,6 +1,6 @@
 # Pi Etherpad
 
-Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ## Set up the SD Card
 
