@@ -154,6 +154,7 @@ On the Pi
     }
     ```
     Save with _CTRL-X-Y ENTER_
+
 - Run Etherpad Lite once, via bin/run.sh
     ```bash
     $ bin/run.sh
@@ -183,6 +184,7 @@ On the Pi
     WantedBy=multi-user.target
     ```
     Save with _CTRL-X-Y ENTER_
+  
 - Reload, enable and start the service
     ```bash
     $ sudo systemctl daemon-reload
