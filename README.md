@@ -9,7 +9,6 @@ Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](h
 - Wait for the Pi to start up (can take a few minutes)
 
 ## Use Etherpad
-
 On your computer
 
 - Visit http://raspberrypi.local:9001
@@ -23,7 +22,6 @@ On your computer
 - [Micro USB power adapter](https://www.pi-shop.ch/raspberry-pi-12-5w-micro-usb-power-supply-2255) (CHF 12)
 
 ## Set up the SD Card
-
 On your computer
 
 - Install _Pi Imager_ from https://www.raspberrypi.com/software/
@@ -47,64 +45,62 @@ On the Pi
 - Insert the SD card into the Pi
 
 ## Log into the Pi
-
 On your computer
 
 - Open the Terminal app
 - Type the following command
-
+    ```bash
 	$ ssh pi@raspberrypi.local
+    ```
 
 (You're now on the Pi, via SSH)
 
 ## Set up the Pi
-
 On the Pi
 
 - Expand the file system
-	
-	$ sudo raspi-config
-	Advanced Options > Expand Filesystem > Ok
-
+    ```bash
+    $ sudo raspi-config
+    Advanced Options > Expand Filesystem > Ok
+    ```
 - Update and upgrade
-
-	$ sudo apt-get update
-	$ sudo apt-get upgrade
+    ```bash
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+    ```
 
 ## Install Prerequisites
-
 On the Pi
 
 - Install Apache
-
-	$ sudo apt-get install apache2
-
+    ```bash
+    $ sudo apt-get install apache2
+    ```
 - Install Node.js
-
-	$ sudo apt install nodejs
-	$ node -v
-	v18.19.0
-
-	(or higher)
-
+    ```bash
+    $ sudo apt install nodejs
+    $ node -v
+    v18.19.0
+    (or higher)
+    ```
 - Install git
-
-	$ sudo apt-get install git
-
+    ```bash
+    $ sudo apt-get install git
+    ```
 - Install npm
-
-	$ sudo apt-get install npm
-
+    ```bash
+    $ sudo apt-get install npm
+    ```
 - Install pnpm
-
-	$ sudo npm install -g pnpm
-
+    ```bash
+    $ sudo npm install -g pnpm
+    ```
 - Install MariaDB (MySQL) Server
-
-	$ sudo apt-get install mariadb-server
+    ```bash
+    $ sudo apt-get install mariadb-server
+    ```
 
 ## Install Etherpad Lite
-
 On the Pi
 
 Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
