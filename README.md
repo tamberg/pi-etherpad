@@ -2,6 +2,8 @@
 
 Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
+> Note: We assume your computer runs MacOS.
+
 ## Use Etherpad
 
 On your computer
@@ -44,8 +46,8 @@ On the Pi
 
 On your computer
 
-- Open the Terminal app (or PuTTY on Windows)
-- Type the following command (without the '$')
+- Open the Terminal app
+- Type the following command
 
 	$ ssh pi@raspberrypi.local
 
