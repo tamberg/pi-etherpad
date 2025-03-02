@@ -127,6 +127,7 @@ On the Pi.
     $ sudo mysql
     create database etherpad_db;
     grant all on etherpad.* to 'DB_USER'@'localhost' identified by 'DB_PASSWORD';
+    quit
     ```
 - Test the database
     ```bash
