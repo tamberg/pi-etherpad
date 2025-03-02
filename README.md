@@ -68,7 +68,7 @@ On the Pi.
     $ sudo apt-get upgrade
     ```
 
-## Install prerequisites
+## Install dependencies
 On the Pi.
 
 - Install Apache
