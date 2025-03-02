@@ -73,10 +73,6 @@ On the Pi.
 ## Install dependencies
 On the Pi.
 
-- Install Apache
-    ```bash
-    $ sudo apt-get install apache2
-    ```
 - Install Node.js
     ```bash
     $ sudo apt install nodejs
