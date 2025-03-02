@@ -135,9 +135,12 @@ On the Pi
     ```bash
     $ mysql -uDB_USER -pDB_PASSWORD
     ```
-- Connect Etherpad Lite to the database
+- Create a file _settings.json_
     ```bash
     $ nano settings.json
+    ```
+    Paste this
+    ```bash
     {
       "dbType" : "mysql",
       "dbSettings" : {
@@ -150,6 +153,7 @@ On the Pi
       },
     }
     ```
+    Save with _CTRL-X-Y ENTER_
 - Run Etherpad Lite once, via bin/run.sh
     ```bash
     $ bin/run.sh
@@ -157,7 +161,7 @@ On the Pi
 
 ## Set up a service to run Etherpad Lite
 
-- Create a file etherpad.service
+- Create a file _etherpad.service_
     ```bash
     $ sudo nano /etc/systemd/system/etherpad.service
     ```
@@ -178,7 +182,7 @@ On the Pi
     [Install]
     WantedBy=multi-user.target
     ```
-    Save with CTRL-X-Y ENTER
+    Save with _CTRL-X-Y ENTER_
 - Reload, enable and start the service
     ```bash
     $ sudo systemctl daemon-reload
