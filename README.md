@@ -14,7 +14,7 @@ On your computer
 
 - Visit http://raspberrypi.local:9001
 
-> Note: your computer has to be in the same Wi-Fi network (or LAN)
+> Note: Your computer has to be in the same Wi-Fi network.
 
 # Maker your own
 ## Get the hardware
