@@ -21,7 +21,7 @@ On your computer.
 - [Micro USB power adapter](https://www.pi-shop.ch/raspberry-pi-12-5w-micro-usb-power-supply-2255) (CHF 12)
 
 ## Set up the SD Card
-On your computer
+On your computer.
 
 - Install _Pi Imager_ from https://www.raspberrypi.com/software/
 - Insert the SD card
@@ -39,7 +39,7 @@ On your computer
 - Insert the SD card into the Pi
 - Try to [log into the Pi](#log-into-the-pi)
 
-On the Pi
+On the Pi.
 
 - Insert the SD card into the Pi
 
@@ -55,7 +55,7 @@ On your computer.
     ```
 
 ## Set up the Pi
-On the Pi
+On the Pi.
 
 - Expand the file system
     ```bash
@@ -69,7 +69,7 @@ On the Pi
     ```
 
 ## Install Prerequisites
-On the Pi
+On the Pi.
 
 - Install Apache
     ```bash
@@ -100,30 +100,27 @@ On the Pi
     ```
 
 ## Install Etherpad Lite
-On the Pi
+On the Pi.
 
 - Download the source from GitHub
     ```bash
     $ cd ~
     $ git clone -b master https://github.com/ether/etherpad-lite.git
     ```
-- Build Etherpad Lite with pnpm
+- Build Etherpad Lite with _pnpm_
     ```bash
     $ cd etherpad-lite
     $ pnpm i
     $ pnpm run build:etherpad
     ```
-- Run Etherpad Lite with pnpm
+- Run Etherpad Lite with _pnpm_
     ```bash
     $ pnpm run prod
     ```
-- Stop Etherpad Lite
-    ```bash
-    CTRL-C
-    ```
-    (works for most programs)
+- Stop Etherpad Lite wit _CTRL-C_
 
 ## Set up a database for Etherpad Lite
+On the Pi.
 
 - Create a database
     ```bash
@@ -161,6 +158,7 @@ On the Pi
     ```
 
 ## Set up a service to run Etherpad Lite
+On the Pi.
 
 - Create a file _etherpad.service_
     ```bash
