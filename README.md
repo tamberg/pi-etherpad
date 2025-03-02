@@ -160,6 +160,9 @@ On the Pi
 - Create a file etherpad.service
     ```bash
     $ sudo nano /etc/systemd/system/etherpad.service
+    ```
+    Paste this
+    ```bash
     [Unit]
     Description=Etherpad Lite
     After=syslog.target network.target
@@ -175,6 +178,7 @@ On the Pi
     [Install]
     WantedBy=multi-user.target
     ```
+    Save with CTRL-X-Y ENTER
 - Reload, enable and start the service
     ```bash
     $ sudo systemctl daemon-reload
