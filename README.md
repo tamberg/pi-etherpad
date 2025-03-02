@@ -16,6 +16,7 @@ On your computer.
 
 # Make your own
 Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 ## Get the hardware
 - [Raspberry Pi 3 B+](https://www.pi-shop.ch/raspberry-pi-3-model-b) (CHF 34)
@@ -102,8 +103,6 @@ On the Pi
     ```
 
 ## Install Etherpad Lite
-Based on https://github.com/ether/etherpad-lite licensed under [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
-
 On the Pi
 
 - Download the source from GitHub
