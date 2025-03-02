@@ -52,8 +52,7 @@ On your computer
     ```bash
 	$ ssh pi@raspberrypi.local
     ```
-
-(You're now on the Pi, via SSH)
+    (You're now on the Pi, via SSH)
 
 ## Set up the Pi
 On the Pi
