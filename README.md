@@ -1,8 +1,6 @@
 # Pi Etherpad
 Host Etherpad Lite, a collaborative text editor, on a Pi 3.
 
-Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-
 > Note: We assume your computer runs MacOS.
 
 ## Run Etherpad Lite
@@ -10,13 +8,15 @@ Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](h
 - Wait for the Pi to start up (can take a few minutes)
 
 ## Use Etherpad Lite
-On your computer
+On your computer.
 
 - Visit http://raspberrypi.local:9001
 
 > Note: Your computer has to be in the same Wi-Fi network.
 
 # Make your own
+Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Get the hardware
 - [Raspberry Pi 3 B+](https://www.pi-shop.ch/raspberry-pi-3-model-b) (CHF 34)
 - [Kingston SD card 16 GB](https://www.pi-shop.ch/kingston-microsdhc-karte-industrial-uhs-i-16-gb) (CHF 23)
