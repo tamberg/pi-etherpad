@@ -1,14 +1,15 @@
 # Pi Etherpad
+Host Etherpad Lite, a collaborative text editor, on a Pi 3.
 
 Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](https://titipi.org/) licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 > Note: We assume your computer runs MacOS.
 
-## Run Etherpad
+## Run Etherpad Lite
 - Plug the power cable into the Pi and a socket
 - Wait for the Pi to start up (can take a few minutes)
 
-## Use Etherpad
+## Use Etherpad Lite
 On your computer
 
 - Visit http://raspberrypi.local:9001
@@ -26,7 +27,7 @@ On your computer
 
 - Install _Pi Imager_ from https://www.raspberrypi.com/software/
 - Insert the SD card
-- Select device _Pi 3_
+- Select device _Pi 3_        
 - Select _Pi OS (other)_ > _Pi OS Lite (64-bit)_
 - Select SD card storage (compare size)
 - Next > Edit
@@ -110,17 +111,17 @@ On the Pi
     $ cd ~
     $ git clone -b master https://github.com/ether/etherpad-lite.git
     ```
-- Build Etherpad with pnpm
+- Build Etherpad Lite with pnpm
     ```bash
     $ cd etherpad-lite
     $ pnpm i
     $ pnpm run build:etherpad
     ```
-- Run Etherpad with pnpm
+- Run Etherpad Lite with pnpm
     ```bash
     $ pnpm run prod
     ```
-- Stop Etherpad
+- Stop Etherpad Lite
     ```bash
     CTRL-C
     ```
@@ -138,7 +139,7 @@ On the Pi
     ```bash
     $ mysql -uDB_USER -pDB_PASSWORD
     ```
-- Connect Etherpad to the database
+- Connect Etherpad Lite to the database
     ```bash
     $ nano settings.json
     {
@@ -153,18 +154,18 @@ On the Pi
       },
     }
     ```
-- Run Etherpad once, via bin/run.sh
+- Run Etherpad Lite once, via bin/run.sh
     ```bash
     $ bin/run.sh
     ```
 
-## Set up a service to run Etherpad
+## Set up a service to run Etherpad Lite
 
 - Create a file etherpad.service
     ```bash
     $ sudo nano /etc/systemd/system/etherpad.service
     [Unit]
-    Description=Etherpad
+    Description=Etherpad Lite
     After=syslog.target network.target
 
     [Service]
@@ -184,7 +185,7 @@ On the Pi
     $ sudo systemctl enable etherpad.service
     $ sudo systemctl start etherpad.service
     ```
-- [Use Etherpad](#use-etherpad)
+- [Use Etherpad Lite](#use-etherpad-lite)
 - Stop and remove the service (optional)
     ```bash
     $ sudo systemctl stop etherpad.service
