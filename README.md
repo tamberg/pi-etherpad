@@ -45,7 +45,7 @@ On the Pi
 - Insert the SD card into the Pi
 
 ## Log into the Pi
-On your computer, optional.
+On your computer.
 
 > Note: Your computer has to be in the same Wi-Fi network.
 
