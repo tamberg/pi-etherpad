@@ -4,6 +4,10 @@ Based on https://titipi.org/wiki/index.php/TITiPI%27s_local_server by [TITiPI](h
 
 > Note: We assume your computer runs MacOS.
 
+## Run Etherpad
+- Plug the power cable into the Pi and a socket
+- Wait for the Pi to start up (can take a few minutes)
+
 ## Use Etherpad
 
 On your computer
