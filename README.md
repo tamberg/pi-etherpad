@@ -157,7 +157,7 @@ On the Pi.
     }
     ```
     Save with _CTRL-X-Y ENTER_
-- Run Etherpad once, via bin/run.sh
+- Run Etherpad once, via _bin/run.sh_
     ```bash
     $ bin/run.sh
     ```
