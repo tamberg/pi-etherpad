@@ -136,7 +136,8 @@ On the Pi.
     ```
 - Create a file _settings.json_
     ```bash
-    $ nano ~/etherpad-lite/settings.json
+    $ cd ~/etherpad-lite
+    $ nano settings.json
     ```
     Paste this
     ```bash
