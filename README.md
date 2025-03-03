@@ -134,9 +134,12 @@ On the Pi.
     $ mysql -uDB_USER -pDB_PASSWORD -D etherpad_db
     quit
     ```
-- Create a file _settings.json_
+- Change the directory
     ```bash
     $ cd ~/etherpad-lite
+    ```
+- Create a file _settings.json_
+    ```bash
     $ nano settings.json
     ```
     Paste this
