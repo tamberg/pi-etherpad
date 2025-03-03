@@ -132,6 +132,7 @@ On the Pi.
 - Test the database
     ```bash
     $ mysql -uDB_USER -pDB_PASSWORD -D etherpad_db
+    show tables;
     quit
     ```
 - Change the directory
