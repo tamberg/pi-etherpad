@@ -161,6 +161,7 @@ On the Pi.
     ```bash
     $ bin/run.sh
     ```
+    Stop with _CTRL-C_
 
 ## Set up a service
 Set up a service to run Etherpad when the Pi starts up.
